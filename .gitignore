@@ -1,0 +1,7 @@
+.idea/
+target/
+logs/
+*.iml
+!/.idea/copyright/*.*
+!/.idea/dictionaries/*.*
+SequenceIdentityGenerator_save_AAS
