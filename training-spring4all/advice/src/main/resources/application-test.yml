@@ -1,0 +1,4 @@
+encrypt:
+  aes:
+    aes-secret: asdfghjklzxcvbnm
+    encrypt-json-key: data
