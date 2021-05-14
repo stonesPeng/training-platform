@@ -16,7 +16,13 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ToString
 public class AesEncryptAdviceProperty {
 
+    /**
+     * aes密钥
+     */
     private String aesSecret = "asdfghjklzxcvbnm";
 
+    /**
+     * 加密参数的json的key
+     */
     private String encryptJsonKey = "data";
 }

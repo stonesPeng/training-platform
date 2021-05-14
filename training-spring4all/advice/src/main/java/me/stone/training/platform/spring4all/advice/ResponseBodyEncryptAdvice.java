@@ -1,4 +1,4 @@
-package me.stone.training.platform.spring4all.advice.autoconfigure;
+package me.stone.training.platform.spring4all.advice;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;

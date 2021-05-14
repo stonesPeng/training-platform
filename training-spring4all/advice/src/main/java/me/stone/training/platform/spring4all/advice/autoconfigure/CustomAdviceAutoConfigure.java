@@ -1,5 +1,7 @@
 package me.stone.training.platform.spring4all.advice.autoconfigure;
 
+import me.stone.training.platform.spring4all.advice.RequestBodyDecryptAdvice;
+import me.stone.training.platform.spring4all.advice.ResponseBodyEncryptAdvice;
 import me.stone.training.platform.spring4all.advice.property.AesEncryptAdviceProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
