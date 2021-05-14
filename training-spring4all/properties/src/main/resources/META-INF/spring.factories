@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  me.stone.training.platform.spring4all.properties.autoconfigure.PropertiesAutoConfigure
