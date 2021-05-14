@@ -15,6 +15,7 @@
     <modules>
         <module>beanlife</module>
         <module>advice</module>
+        <module>enable</module>
     </modules>
 
     <properties>
