@@ -1,6 +1,6 @@
 package me.stone.training.platform.spring4all.circular.dependencies;
 
-import me.stone.training.platform.spring4all.circular.dependencies.object.TestBeanA;
+import me.stone.training.platform.spring4all.circular.dependencies.object.case3.TestBeanA;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;

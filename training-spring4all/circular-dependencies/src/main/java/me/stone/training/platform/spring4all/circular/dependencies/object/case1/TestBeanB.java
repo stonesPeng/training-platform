@@ -1,9 +1,8 @@
-package me.stone.training.platform.spring4all.circular.dependencies.object;
+package me.stone.training.platform.spring4all.circular.dependencies.object.case1;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
-import org.springframework.stereotype.Component;
 
 /**
  * @author honorStone
@@ -12,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @desc description
  * @since 2021/5/14 16:47
  */
-@Component
+//@Component
 @Slf4j
 public class TestBeanB {
     private final TestBeanA testBeanA;
