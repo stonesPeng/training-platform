@@ -6,6 +6,7 @@
     <modules>
         <module>training-spring4all</module>
         <module>training-java</module>
+        <module>training-common</module>
     </modules>
     <parent>
         <artifactId>training-module-parent</artifactId>
