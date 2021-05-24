@@ -1,5 +1,7 @@
 package me.stone.training.platform.training.java.algorithm;
 
+import java.util.Arrays;
+
 /**
  * @author honorStone
  * @version 1.0
@@ -15,4 +17,12 @@ public interface IMutableSorter {
      * @param elements 数组
      */
     void sort(int[] elements);
+
+
+    static void main(String[] args) {
+        int[] array = new int[]{1, 3, 8, 1, 5, 2};
+        final IMutableSorter sorter = new InsertionSort();
+        sorter.sort(array);
+        System.out.println(Arrays.toString(array));
+    }
 }
