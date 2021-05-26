@@ -1,4 +1,4 @@
-package me.stone.training.platform.training.java.algorithm;
+package me.stone.training.platform.training.java.algorithm.sorting;
 
 /**
  * @author honorStone
