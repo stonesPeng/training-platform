@@ -6,7 +6,7 @@ import me.stone.training.platform.training.java.algorithm.utils.ArraysHelper;
  * @author honorStone
  * @version 1.0
  * @email honor_stone@163.com
- * @desc 冒泡排序
+ * @desc 冒泡排序, 稳定排序
  * @since 2021/5/25 9:12
  */
 public class BubbleSort implements IMutableSorter {

@@ -16,4 +16,12 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>me.stone.training.platform</groupId>
+            <artifactId>training-java-string</artifactId>
+            <version>${training.version}</version>
+        </dependency>
+    </dependencies>
+
 </project>

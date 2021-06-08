@@ -14,6 +14,7 @@
 
     <modules>
         <module>rabbitmq-demo</module>
+        <module>rabbitmq-project</module>
     </modules>
 
     <properties>

@@ -3,32 +3,21 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>training-java</artifactId>
+        <artifactId>training-spring4all-rabbitmq</artifactId>
         <groupId>me.stone.training.platform</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>training-java-algorithm</artifactId>
+    <artifactId>training-spring4all-rabbitmq-project</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>producer</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-    <dependencies>
-
-        <dependency>
-            <groupId>me.stone.training.platform</groupId>
-            <artifactId>training-common-tool</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>me.stone.training.platform</groupId>
-            <artifactId>training-java-string</artifactId>
-            <version>${training.version}</version>
-        </dependency>
-    </dependencies>
-
 
 </project>
