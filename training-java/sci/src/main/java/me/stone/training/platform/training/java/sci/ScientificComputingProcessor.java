@@ -1,4 +1,4 @@
-package me.stone.training.platform.training.java.algorithm.sorting;
+package me.stone.training.platform.training.java.sci;
 
 import lombok.SneakyThrows;
 
@@ -13,10 +13,10 @@ import java.text.DecimalFormat;
  * @author honorStone
  * @version 1.0
  * @email honor_stone@163.com
- * @desc description
+ * @desc 临时用于科学计算
  * @since 2021/5/30 15:31
  */
-public interface Temp {
+public interface ScientificComputingProcessor {
 
 
     @SneakyThrows
@@ -163,7 +163,7 @@ public interface Temp {
 
 
     static void main(String[] args) {
-        Temp.sci1();
+        ScientificComputingProcessor.sci1();
 //        Temp.sci3();
     }
 

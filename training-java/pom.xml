@@ -17,6 +17,7 @@
         <module>algorithm</module>
         <module>jackson</module>
         <module>string</module>
+        <module>sci</module>
     </modules>
 
     <properties>
