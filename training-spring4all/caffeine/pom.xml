@@ -3,24 +3,13 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>training-platform</artifactId>
+        <artifactId>training-spring4all</artifactId>
         <groupId>me.stone.training.platform</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>training-spring4all</artifactId>
-    <packaging>pom</packaging>
-    <name>spring4all母包</name>
-    <modules>
-        <module>beanlife</module>
-        <module>advice</module>
-        <module>enable</module>
-        <module>properties</module>
-        <module>circular-dependencies</module>
-        <module>rabbitmq</module>
-        <module>caffeine</module>
-    </modules>
+    <artifactId>training-spring4all-caffeine</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -30,11 +19,11 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-log4j2</artifactId>
+            <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-yaml</artifactId>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
         </dependency>
     </dependencies>
 

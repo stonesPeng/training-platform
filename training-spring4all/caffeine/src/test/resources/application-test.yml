@@ -1,0 +1,7 @@
+me:
+  caffeine:
+    order:
+      expire-time: 70s
+      init-size: 10
+      max-size: 1000
+      name: order
