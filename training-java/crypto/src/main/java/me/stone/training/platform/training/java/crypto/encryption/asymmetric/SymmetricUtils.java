@@ -4,6 +4,7 @@ import lombok.SneakyThrows;
 import me.stone.training.platform.training.java.string.converter.ArraysStringConverter;
 import org.intellij.lang.annotations.MagicConstant;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
@@ -181,7 +182,27 @@ public interface SymmetricUtils {
     }
 
 
+    /**
+     * 密钥/偏移量生成器
+     */
     interface SecureRandomGenerator {
+        /**
+         * 获取加密密钥
+         *
+         * @param symmetricMode     对称加密模式
+         * @param lenOfSymmetricKey 密钥长度
+         * @param password          指定的密码，用于生成密钥
+         * @return 加密密钥
+         */
+        @SneakyThrows
+        static SecretKey symmetricKey(@MagicConstant(valuesFromClass = SymmetricMode.class) String symmetricMode, int lenOfSymmetricKey, @Nullable String password) {
+            final SecureRandom secureRandom = (password == null || password.trim().isEmpty()) ? new SecureRandom() : new SecureRandom(password.getBytes(StandardCharsets.UTF_8));
+            final KeyGenerator keyGenerator = KeyGenerator.getInstance(symmetricMode);
+            keyGenerator.init(lenOfSymmetricKey, secureRandom);
+            return keyGenerator.generateKey();
+        }
+
+
         /**
          * 获取加密密钥
          *
@@ -191,9 +212,8 @@ public interface SymmetricUtils {
          */
         @SneakyThrows
         static SecretKey symmetricKey(@MagicConstant(valuesFromClass = SymmetricMode.class) String symmetricMode, int lenOfSymmetricKey) {
-            final SecureRandom secureRandom = new SecureRandom();
             final KeyGenerator keyGenerator = KeyGenerator.getInstance(symmetricMode);
-            keyGenerator.init(lenOfSymmetricKey, secureRandom);
+            keyGenerator.init(lenOfSymmetricKey);
             return keyGenerator.generateKey();
         }
 
