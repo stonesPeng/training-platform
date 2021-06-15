@@ -25,47 +25,6 @@ import java.util.List;
  */
 public interface SymmetricUtils {
 
-    static void main(String[] args) {
-        test3();
-        //test2();
-    }
-
-    static void test1() {
-        String originData = "1231231231231";
-        final SecretKey secretKey = SecureRandomGenerator.symmetricKey(SymmetricMode.AES, 128);
-        System.out.println(ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
-        final byte[] encryptionData = encryption(originData, CipherMode.AES_ECB_PKCS5PADDING, ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
-        final String encryptionHexData = ArraysStringConverter.convertByteArrayToHexString(encryptionData);
-        System.out.println(encryptionHexData);
-        final String decryptionData = decryption(encryptionHexData, CipherMode.AES_ECB_PKCS5PADDING, ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
-        System.out.println(decryptionData);
-    }
-
-    static void test2() {
-        String originData = "1231231231231";
-        final SecretKey secretKey = SecureRandomGenerator.symmetricKey(SymmetricMode.DES, 56);
-        System.out.println(ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
-        final byte[] iv = SecureRandomGenerator.initializationVector(8);
-        System.out.println(ArraysStringConverter.convertByteArrayToHexString(iv));
-        final byte[] encryptionData = encryptionWithIv(originData, CipherMode.DES_CBC_PKCS5PADDING, ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()), ArraysStringConverter.convertByteArrayToHexString(iv));
-        final String encryptionHexData = ArraysStringConverter.convertByteArrayToHexString(encryptionData);
-        System.out.println(encryptionHexData);
-        final String decryptionData = decryptionWithIv(encryptionHexData, CipherMode.DES_CBC_PKCS5PADDING, ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()), ArraysStringConverter.convertByteArrayToHexString(iv));
-        System.out.println(decryptionData);
-    }
-
-    static void test3() {
-        String originData = "1231231231231";
-        final SecretKeySpec secretKey = generateKey("RuOgacx137uGk8fB".getBytes(StandardCharsets.UTF_8), SymmetricMode.AES);
-        System.out.println(ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
-        final byte[] encryptionData = encryption(originData, CipherMode.AES_ECB_PKCS5PADDING, ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
-        final String encryptionHexData = ArraysStringConverter.convertByteArrayToHexString(encryptionData);
-        System.out.println(encryptionHexData);
-        final String decryptionData = decryption(encryptionHexData, CipherMode.AES_ECB_PKCS5PADDING, ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
-        System.out.println(decryptionData);
-
-    }
-
     /**
      * 对称加密，含有偏移量（expose）
      *
@@ -297,6 +256,47 @@ public interface SymmetricUtils {
         static boolean contains(String mode) {
             return SymmetricModes.contains(mode);
         }
+    }
+
+    static void main(String[] args) {
+        test3();
+        //test2();
+    }
+
+    static void test1() {
+        String originData = "1231231231231";
+        final SecretKey secretKey = SecureRandomGenerator.symmetricKey(SymmetricMode.AES, 128);
+        System.out.println(ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
+        final byte[] encryptionData = encryption(originData, CipherMode.AES_ECB_PKCS5PADDING, ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
+        final String encryptionHexData = ArraysStringConverter.convertByteArrayToHexString(encryptionData);
+        System.out.println(encryptionHexData);
+        final String decryptionData = decryption(encryptionHexData, CipherMode.AES_ECB_PKCS5PADDING, ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
+        System.out.println(decryptionData);
+    }
+
+    static void test2() {
+        String originData = "1231231231231";
+        final SecretKey secretKey = SecureRandomGenerator.symmetricKey(SymmetricMode.DES, 56);
+        System.out.println(ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
+        final byte[] iv = SecureRandomGenerator.initializationVector(8);
+        System.out.println(ArraysStringConverter.convertByteArrayToHexString(iv));
+        final byte[] encryptionData = encryptionWithIv(originData, CipherMode.DES_CBC_PKCS5PADDING, ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()), ArraysStringConverter.convertByteArrayToHexString(iv));
+        final String encryptionHexData = ArraysStringConverter.convertByteArrayToHexString(encryptionData);
+        System.out.println(encryptionHexData);
+        final String decryptionData = decryptionWithIv(encryptionHexData, CipherMode.DES_CBC_PKCS5PADDING, ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()), ArraysStringConverter.convertByteArrayToHexString(iv));
+        System.out.println(decryptionData);
+    }
+
+    static void test3() {
+        String originData = "1231231231231";
+        final SecretKeySpec secretKey = generateKey("RuOgacx137uGk8fB".getBytes(StandardCharsets.UTF_8), SymmetricMode.AES);
+        System.out.println(ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
+        final byte[] encryptionData = encryption(originData, CipherMode.AES_ECB_PKCS5PADDING, ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
+        final String encryptionHexData = ArraysStringConverter.convertByteArrayToHexString(encryptionData);
+        System.out.println(encryptionHexData);
+        final String decryptionData = decryption(encryptionHexData, CipherMode.AES_ECB_PKCS5PADDING, ArraysStringConverter.convertByteArrayToHexString(secretKey.getEncoded()));
+        System.out.println(decryptionData);
+
     }
 
 }
