@@ -1,4 +1,4 @@
-package me.stone.training.platform.training.java.crypto.encryption.asymmetric;
+package me.stone.training.platform.training.java.crypto.encryption.symmetric;
 
 import lombok.SneakyThrows;
 import me.stone.training.platform.training.java.string.converter.ArraysStringConverter;
@@ -150,11 +150,13 @@ public interface SymmetricUtils {
          *
          * @param symmetricMode     对称加密模式
          * @param lenOfSymmetricKey 密钥长度
-         * @param password          指定的密码，用于生成密钥
+         * @param password          指定的种子，用于生成密钥
          * @return 加密密钥
          */
         @SneakyThrows
-        static SecretKey symmetricKey(@MagicConstant(valuesFromClass = SymmetricMode.class) String symmetricMode, int lenOfSymmetricKey, @Nullable String password) {
+        static SecretKey symmetricKey(@MagicConstant(valuesFromClass = SymmetricMode.class) String symmetricMode,
+                                      int lenOfSymmetricKey,
+                                      @Nullable String password) {
             final SecureRandom secureRandom = (password == null || password.trim().isEmpty()) ? new SecureRandom() : new SecureRandom(password.getBytes(StandardCharsets.UTF_8));
             final KeyGenerator keyGenerator = KeyGenerator.getInstance(symmetricMode);
             keyGenerator.init(lenOfSymmetricKey, secureRandom);
@@ -170,10 +172,24 @@ public interface SymmetricUtils {
          * @return 加密密钥
          */
         @SneakyThrows
-        static SecretKey symmetricKey(@MagicConstant(valuesFromClass = SymmetricMode.class) String symmetricMode, int lenOfSymmetricKey) {
+        static SecretKey symmetricKey(@MagicConstant(valuesFromClass = SymmetricMode.class) String symmetricMode,
+                                      int lenOfSymmetricKey) {
             final KeyGenerator keyGenerator = KeyGenerator.getInstance(symmetricMode);
             keyGenerator.init(lenOfSymmetricKey);
             return keyGenerator.generateKey();
+        }
+
+        /**
+         * 生成指定长度的随机数
+         *
+         * @param lenOfSymmetricKey 随机数的长度
+         * @return 随机数
+         */
+        static byte[] symmetricKey(int lenOfSymmetricKey) {
+            final SecureRandom secureRandom = new SecureRandom();
+            final byte[] bytes = new byte[lenOfSymmetricKey];
+            secureRandom.nextBytes(bytes);
+            return bytes;
         }
 
         /**
