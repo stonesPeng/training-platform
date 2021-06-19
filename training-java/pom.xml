@@ -18,6 +18,7 @@
         <module>jackson</module>
         <module>string</module>
         <module>sci</module>
+        <module>thread</module>
     </modules>
 
     <properties>
