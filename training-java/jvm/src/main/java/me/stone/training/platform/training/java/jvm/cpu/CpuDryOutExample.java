@@ -11,7 +11,7 @@ public class CpuDryOutExample {
 
     public static void dryOut() {
         while (true) {
-            System.out.println("dry out utilization rate");
+            System.out.println("dry out utilization rate of cpu");
             //do something
         }
     }

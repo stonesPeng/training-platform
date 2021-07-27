@@ -27,7 +27,7 @@ public class GCExample {
             System.out.println("gcBean is available");
         }
         TimeUnit.SECONDS.sleep(1);
-        gcBean = null;
+        //gcBean = null;
         System.gc();
         if (gcBean == null) {
             System.out.println("gcBean == null");
