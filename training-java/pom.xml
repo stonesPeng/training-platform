@@ -19,6 +19,7 @@
         <module>string</module>
         <module>sci</module>
         <module>thread</module>
+        <module>jvm</module>
     </modules>
 
     <properties>

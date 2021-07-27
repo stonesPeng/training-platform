@@ -9,8 +9,6 @@ package me.stone.training.platform.training.java.thread;
  */
 public class SyncExample {
 
-    private static final Object LOCK = new Object();
-
     private static int i = 1;
 
     public synchronized static void increase1() {
@@ -21,8 +19,15 @@ public class SyncExample {
         i++;
     }
 
+    public static void main(String[] args) {
+        synchronized (SyncExample.class) {
+
+        }
+        SyncExample.increase1();
+    }
+
     public void increase3() {
-        synchronized (LOCK) {
+        synchronized (SyncExample.class) {
             i++;
         }
     }

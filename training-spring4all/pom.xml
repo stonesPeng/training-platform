@@ -20,6 +20,7 @@
         <module>circular-dependencies</module>
         <module>rabbitmq</module>
         <module>caffeine</module>
+        <module>dubbo</module>
     </modules>
 
     <properties>
