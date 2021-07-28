@@ -1,5 +1,6 @@
 package me.stone.training.platform.training.spring4all.rabbitmq.demo;
 
+import lombok.SneakyThrows;
 import me.stone.training.platform.training.spring4all.rabbitmq.demo.producer.CustomizeProducer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,10 +17,12 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 public class Launcher {
 
+    @SneakyThrows
     public static void main(String[] args) {
         final ConfigurableApplicationContext ctx = SpringApplication.run(Launcher.class, args);
         final CustomizeProducer bean = ctx.getBean(CustomizeProducer.class);
         bean.invoke();
+        // TimeUnit.SECONDS.sleep(100);
         ctx.close();
     }
 }

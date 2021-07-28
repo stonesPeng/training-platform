@@ -15,6 +15,7 @@
     <modules>
         <module>rabbitmq-demo</module>
         <module>rabbitmq-project</module>
+        <module>rabbitmq-native-demo</module>
     </modules>
 
     <properties>
