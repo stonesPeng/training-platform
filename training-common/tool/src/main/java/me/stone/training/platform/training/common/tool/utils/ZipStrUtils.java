@@ -11,7 +11,6 @@ import org.jooq.lambda.Sneaky;
 
 import java.lang.reflect.Field;
 import java.nio.charset.StandardCharsets;
-import java.time.Instant;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
@@ -57,7 +56,7 @@ public interface ZipStrUtils {
     }
 
     public static void main(String[] args) {
-        String str = Long.toString(Long.MAX_VALUE) + "ff" + Long.toString(Short.MAX_VALUE) + "ff" + Long.toString(Instant.now().getEpochSecond());
+        String str = Long.MAX_VALUE + "ee" + Short.MAX_VALUE + "ee" + Long.MAX_VALUE;
         final byte[] to = to(str);
         final String s = ArraysStringConverter.convertByteArrayToHexString(str.getBytes(StandardCharsets.UTF_8));
         System.out.println(str.length());
