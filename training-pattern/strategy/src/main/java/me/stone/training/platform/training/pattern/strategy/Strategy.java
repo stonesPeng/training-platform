@@ -13,14 +13,25 @@ public interface Strategy {
      */
     void strategyImplementation();
 
-    static class DefaultStrategy implements Strategy {
+    class DefaultStrategy implements Strategy {
 
         /**
          * strategy details
          */
         @Override
         public void strategyImplementation() {
+            System.out.println("default strategy");
+        }
+    }
 
+    class AnotherStrategy implements Strategy {
+
+        /**
+         * strategy details
+         */
+        @Override
+        public void strategyImplementation() {
+            System.out.println("another strategy");
         }
     }
 }
