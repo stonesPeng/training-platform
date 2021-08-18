@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>traning-java-jvm</artifactId>
+    <artifactId>training-java-jvm</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

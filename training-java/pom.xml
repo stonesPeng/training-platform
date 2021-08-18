@@ -20,6 +20,7 @@
         <module>sci</module>
         <module>thread</module>
         <module>jvm</module>
+        <module>map</module>
     </modules>
 
     <properties>

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>traning-spring4all-rabbitmq-native-demo</artifactId>
+    <artifactId>training-spring4all-rabbitmq-native-demo</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

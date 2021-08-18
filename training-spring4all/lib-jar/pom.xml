@@ -3,17 +3,19 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>training-pattern</artifactId>
+        <artifactId>training-spring4all</artifactId>
         <groupId>me.stone.training.platform</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>training-pattern-strategy</artifactId>
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <artifactId>training-spring4all-lib-jar</artifactId>
+    <packaging>pom</packaging>
+    <name>lib jar</name>
+    <modules>
+        <module>api</module>
+        <module>core</module>
+        <module>inf</module>
+    </modules>
 
 </project>

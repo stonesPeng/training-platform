@@ -21,6 +21,8 @@
         <module>rabbitmq</module>
         <module>caffeine</module>
         <module>dubbo</module>
+        <module>jooq</module>
+        <module>lib-jar</module>
     </modules>
 
     <properties>

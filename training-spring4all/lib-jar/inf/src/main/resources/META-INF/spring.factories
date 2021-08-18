@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  me.stone.training.platform.spring4all.lib.jar.inf.autoconfigure.TrainingSpring4allLibJarInfAutoConfigure

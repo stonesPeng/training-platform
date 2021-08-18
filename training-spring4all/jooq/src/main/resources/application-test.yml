@@ -1,0 +1,7 @@
+spring:
+
+  datasource:
+    url: jdbc:mysql://192.168.8.94:3399/jooq?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&useAffectedRows=true
+    username: root
+    password: 'medtree123456'
+    driver-class-name: com.mysql.cj.jdbc.Driver

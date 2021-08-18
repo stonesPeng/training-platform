@@ -11,13 +11,13 @@ import java.util.concurrent.TimeUnit;
  * @desc description
  * @since 2021/7/26 19:50
  */
-public class GCExample {
+public class GCProcess {
 
-    private static GCExample gcBean;
+    private static GCProcess gcBean;
 
     @SneakyThrows
     public static void main(String[] args) {
-        gcBean = new GCExample();
+        gcBean = new GCProcess();
         gcBean = null;
         System.gc();
         TimeUnit.SECONDS.sleep(1);
@@ -27,7 +27,7 @@ public class GCExample {
             System.out.println("gcBean is available");
         }
         TimeUnit.SECONDS.sleep(1);
-        //gcBean = null;
+        gcBean = null;
         System.gc();
         if (gcBean == null) {
             System.out.println("gcBean == null");
