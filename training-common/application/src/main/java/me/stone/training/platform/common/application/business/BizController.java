@@ -1,8 +1,8 @@
 package me.stone.training.platform.common.application.business;
 
 import lombok.AllArgsConstructor;
-import me.stone.training.platform.spring4all.lib.jar.api.BizCommands;
-import me.stone.training.platform.spring4all.lib.jar.api.BizQueries;
+import me.stone.training.platform.spring4all.lib.jars.api.BizCommands;
+import me.stone.training.platform.spring4all.lib.jars.api.BizQueries;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;

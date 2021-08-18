@@ -13,9 +13,7 @@ import org.springframework.context.annotation.Import;
  * @desc description
  * @since 2021/8/17
  */
-@Import({
-    BizController.class
-})
+
 @SpringBootApplication
 public class TrainingLibJarApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
