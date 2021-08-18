@@ -1,4 +1,4 @@
-package me.stone.training.platform.spring4all.lib.jar.api;
+package me.stone.training.platform.spring4all.lib.jars.api;
 
 import java.util.Map;
 
@@ -11,5 +11,10 @@ import java.util.Map;
  */
 public interface BizQueries {
 
+    /**
+     *  loadById
+     * @param id id
+     * @return biz
+     */
     Map<String, String> loadById(long id);
 }

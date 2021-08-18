@@ -1,6 +1,6 @@
-package me.stone.training.platform.spring4all.lib.jar.inf.repository;
+package me.stone.training.platform.spring4all.lib.jars.inf.repository;
 
-import me.stone.training.platform.spring4all.lib.jar.core.port.BizRepository;
+import me.stone.training.platform.spring4all.lib.jars.core.port.BizRepository;
 
 import java.lang.ref.SoftReference;
 import java.util.HashMap;

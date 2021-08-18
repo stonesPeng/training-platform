@@ -1,4 +1,4 @@
-package me.stone.training.platform.spring4all.lib.jar.api;
+package me.stone.training.platform.spring4all.lib.jars.api;
 
 import java.util.Map;
 
@@ -10,5 +10,10 @@ import java.util.Map;
  * @since 2021/8/16
  */
 public interface BizCommands {
+    /**
+     * save biz
+     * @param params params
+     * @return save result
+     */
     int saveMe(Map<String, String> params);
 }

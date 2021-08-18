@@ -1,11 +1,11 @@
-package me.stone.training.platform.spring4all.lib.jar.inf.autoconfigure;
+package me.stone.training.platform.spring4all.lib.jars.inf.autoconfigure;
 
-import me.stone.training.platform.spring4all.lib.jar.api.BizCommands;
-import me.stone.training.platform.spring4all.lib.jar.api.BizQueries;
-import me.stone.training.platform.spring4all.lib.jar.core.port.BizRepository;
-import me.stone.training.platform.spring4all.lib.jar.core.usecase.BizCommandsImpl;
-import me.stone.training.platform.spring4all.lib.jar.core.usecase.BizQueriesImpl;
-import me.stone.training.platform.spring4all.lib.jar.inf.repository.BizRepositoryImpl;
+import me.stone.training.platform.spring4all.lib.jars.api.BizCommands;
+import me.stone.training.platform.spring4all.lib.jars.api.BizQueries;
+import me.stone.training.platform.spring4all.lib.jars.core.port.BizRepository;
+import me.stone.training.platform.spring4all.lib.jars.core.usecase.BizCommandsImpl;
+import me.stone.training.platform.spring4all.lib.jars.core.usecase.BizQueriesImpl;
+import me.stone.training.platform.spring4all.lib.jars.inf.repository.BizRepositoryImpl;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

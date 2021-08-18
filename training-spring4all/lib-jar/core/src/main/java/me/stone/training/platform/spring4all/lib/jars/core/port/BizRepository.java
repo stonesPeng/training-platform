@@ -1,4 +1,4 @@
-package me.stone.training.platform.spring4all.lib.jar.core.port;
+package me.stone.training.platform.spring4all.lib.jars.core.port;
 
 import lombok.Getter;
 import lombok.Setter;

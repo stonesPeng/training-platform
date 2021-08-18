@@ -1,8 +1,8 @@
-package me.stone.training.platform.spring4all.lib.jar.core.usecase;
+package me.stone.training.platform.spring4all.lib.jars.core.usecase;
 
 import lombok.AllArgsConstructor;
-import me.stone.training.platform.spring4all.lib.jar.api.BizCommands;
-import me.stone.training.platform.spring4all.lib.jar.core.port.BizRepository;
+import me.stone.training.platform.spring4all.lib.jars.api.BizCommands;
+import me.stone.training.platform.spring4all.lib.jars.core.port.BizRepository;
 
 import java.util.Map;
 
