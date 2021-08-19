@@ -17,6 +17,7 @@
         <module>strategy</module>
         <module>compose</module>
         <module>delegating</module>
+        <module>state</module>
     </modules>
 
     <properties>
