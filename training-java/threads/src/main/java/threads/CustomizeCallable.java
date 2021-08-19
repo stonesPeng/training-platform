@@ -1,4 +1,4 @@
-package me.stone.training.platform.training.java.thread;
+package me.stone.training.platform.training.java.threads;
 
 import java.util.concurrent.Callable;
 

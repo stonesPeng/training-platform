@@ -5,6 +5,7 @@ import org.springframework.beans.factory.BeanClassLoaderAware;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
 import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.context.*;
 import org.springframework.context.weaving.LoadTimeWeaverAware;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.instrument.classloading.LoadTimeWeaver;
@@ -64,4 +65,5 @@ public class TestAwareBean implements ApplicationContextAware,
     public void setNotificationPublisher(NotificationPublisher notificationPublisher) {
 
     }
+
 }

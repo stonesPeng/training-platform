@@ -37,7 +37,7 @@ public class GCProcess {
     }
 
     @Override
-    protected void finalize() throws Throwable {
+    protected void finalize() {
         System.out.println("#finalize in...");
         gcBean = this;
     }

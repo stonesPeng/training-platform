@@ -12,7 +12,6 @@
     <artifactId>training-common</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>application</module>
         <module>tool</module>
     </modules>
 
