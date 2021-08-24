@@ -8,6 +8,7 @@
         <module>training-java</module>
         <module>training-common</module>
         <module>training-pattern</module>
+        <module>training-component</module>
     </modules>
     <parent>
         <artifactId>training-module-parent</artifactId>
