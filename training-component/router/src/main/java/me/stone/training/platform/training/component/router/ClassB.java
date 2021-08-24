@@ -1,4 +1,4 @@
-package me.stone.training.platform.training.component.routers.situation;
+package me.stone.training.platform.training.component.router;
 
 import org.springframework.stereotype.Component;
 

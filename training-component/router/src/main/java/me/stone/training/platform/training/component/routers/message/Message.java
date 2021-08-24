@@ -1,5 +1,9 @@
 package me.stone.training.platform.training.component.routers.message;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.ToString;
+
 import java.time.Instant;
 
 /**

@@ -1,7 +1,7 @@
 package me.stone.training.platform.training.component.routers.configuration;
 
-import com.stone.router.handler.LogMessageHandler;
-import com.stone.router.message.MessageRouter;
+import me.stone.training.platform.training.component.routers.handler.LogMessageHandler;
+import me.stone.training.platform.training.component.routers.message.MessageRouter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

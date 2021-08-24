@@ -1,8 +1,9 @@
 package me.stone.training.platform.training.component.routers.handler;
 
-import com.stone.router.message.Message;
-import com.stone.router.message.MessageHandler;
-import com.stone.router.message.OutMessage;
+
+import me.stone.training.platform.training.component.routers.message.Message;
+import me.stone.training.platform.training.component.routers.message.MessageHandler;
+import me.stone.training.platform.training.component.routers.message.OutMessage;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;

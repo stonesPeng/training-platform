@@ -1,8 +1,8 @@
 package me.stone.training.platform.training.component.routers.endpoint;
 
-import com.stone.router.message.Message;
-import com.stone.router.message.MessageRouter;
-import com.stone.router.message.OutMessage;
+import me.stone.training.platform.training.component.routers.message.Message;
+import me.stone.training.platform.training.component.routers.message.MessageRouter;
+import me.stone.training.platform.training.component.routers.message.OutMessage;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
