@@ -23,7 +23,7 @@ public class UpgradeSingletonInLazy {
         INSTANCE = this;
     }
 
-    public static UpgradeSingletonInLazy getInstance() {
+    public final static UpgradeSingletonInLazy getInstance() {
         if (INSTANCE == null) {
             INSTANCE = new UpgradeSingletonInLazy();
         }

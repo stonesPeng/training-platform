@@ -10,6 +10,7 @@ package me.stone.training.platform.training.pattern.singleton;
 public class SingletonInLazy {
 
     public static SingletonInLazy INSTANCE = null;
+
     static final Runnable RUNNABLE = () -> {
         final SingletonInLazy instance = SingletonInLazy.getInstance();
         System.out.println(Thread.currentThread().getName() + ":" + instance);
@@ -18,7 +19,7 @@ public class SingletonInLazy {
     private SingletonInLazy() {
     }
 
-    public static SingletonInLazy getInstance() {
+    public final static SingletonInLazy getInstance() {
         if (INSTANCE == null) {
             INSTANCE = new SingletonInLazy();
         }
