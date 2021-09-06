@@ -20,7 +20,8 @@ public interface UserInfoSqlProvider {
 
     static String buildLoadById(@Param(value = "id") long id){
         return new SQL(){{
-            SELECT("id,user_name,password,gender,salary,age");
+            SELECT("id,user_name,password,gender,age");
+            FROM("user_info");
             WHERE("id = #{id}");
         }}.toString();
     }
