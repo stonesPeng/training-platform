@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://{ipaddress}:5438/mydb?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&useAffectedRows=true
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: false

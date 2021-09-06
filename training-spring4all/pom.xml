@@ -23,6 +23,7 @@
         <module>dubbo</module>
         <module>jooq</module>
         <module>lib-jar</module>
+        <module>pg</module>
     </modules>
 
     <properties>

@@ -55,7 +55,18 @@
                 <artifactId>jasypt-spring-boot-starter</artifactId>
                 <version>3.0.3</version>
             </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>2.2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>4.0.3</version>
+            </dependency>
         </dependencies>
+
     </dependencyManagement>
     <dependencies>
         <!--//region 预处理器 -->
