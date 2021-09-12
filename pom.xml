@@ -30,6 +30,7 @@
         <maven.deploy.skip>false</maven.deploy.skip>
         <assembly.skipAssembly>true</assembly.skipAssembly>
         <training.version>1.0-SNAPSHOT</training.version>
+        <nacos.version>0.2.4</nacos.version>
     </properties>
 
     <profiles>
@@ -64,6 +65,16 @@
                 <groupId>com.zaxxer</groupId>
                 <artifactId>HikariCP</artifactId>
                 <version>4.0.3</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-config-spring-boot-starter</artifactId>
+                <version>${nacos.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-discovery-spring-boot-starter</artifactId>
+                <version>${nacos.version}</version>
             </dependency>
         </dependencies>
 

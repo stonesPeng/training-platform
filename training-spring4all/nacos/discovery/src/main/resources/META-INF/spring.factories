@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  me.stone.training.platform.training.spring4all.nacos.discovery.autoconfiguration.NacosDiscoveryAutoConfiguration

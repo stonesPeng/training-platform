@@ -24,6 +24,7 @@
         <module>jooq</module>
         <module>lib-jar</module>
         <module>pg</module>
+        <module>nacos</module>
     </modules>
 
     <properties>
