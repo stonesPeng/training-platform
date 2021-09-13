@@ -9,6 +9,7 @@
         <module>training-common</module>
         <module>training-pattern</module>
         <module>training-component</module>
+        <module>training-spring4all-cloud</module>
     </modules>
     <parent>
         <artifactId>training-module-parent</artifactId>
