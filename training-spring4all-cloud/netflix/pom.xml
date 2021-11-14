@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>feign</module>
+        <module>eureka</module>
     </modules>
 
     <properties>
