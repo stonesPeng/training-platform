@@ -1,4 +1,4 @@
-package me.stone.training.platform.training.java.map;
+package me.stone.training.platform.training.java.stream;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,13 +6,11 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * @author honorStone@163.com
- * @version 1.0
- * @email honor_stone@163.com
- * @desc description
- * @since 2021/8/5
+ * @author honor_stone@163.com
+ * @description default description
+ * @date 2021/11/25 17:33
  */
-public class MapApp {
+public class NewMap {
 
     public static HashMap<String, String> maps = new HashMap<>();
 
