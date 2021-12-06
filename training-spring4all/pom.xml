@@ -25,6 +25,7 @@
         <module>lib-jar</module>
         <module>pg</module>
         <module>nacos</module>
+        <module>retry</module>
     </modules>
 
     <properties>
