@@ -53,7 +53,7 @@ public interface Numbers {
             ignoreDecimal ? (includePoint ? decimal + 1 : decimal) : (includePoint ? s.length() : s.length() - 1)
             : s.length();
         if (leftLen < len) {
-            return com.medtreehealth.infra.common.api.util.Strings.repeat(placeHolder, len - leftLen) + num.toString();
+            return Strings.repeat(placeHolder, len - leftLen) + num.toString();
         }
         return num.toString();
     }
@@ -67,7 +67,7 @@ public interface Numbers {
             : s.length();
         //System.out.println(rightLen);
         if (rightLen < len) {
-            return num.toString() + com.medtreehealth.infra.common.api.util.Strings.repeat(placeHolder, len - rightLen);
+            return num.toString() + Strings.repeat(placeHolder, len - rightLen);
         }
         return num.toString();
     }
@@ -134,7 +134,7 @@ public interface Numbers {
             builder.insert(len - ds, '.');
         }
         if (is > 0) {
-            builder.insert(len - ds, com.medtreehealth.infra.common.api.util.Strings.repeat('0', is));
+            builder.insert(len - ds,Strings.repeat('0', is));
         }
         return new BigDecimal(builder.toString());
     }
